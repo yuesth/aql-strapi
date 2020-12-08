@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kontakpayment-programs",
+      "handler": "kontakpayment-program.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kontakpayment-programs/count",
+      "handler": "kontakpayment-program.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kontakpayment-programs/:id",
+      "handler": "kontakpayment-program.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kontakpayment-programs",
+      "handler": "kontakpayment-program.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kontakpayment-programs/:id",
+      "handler": "kontakpayment-program.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kontakpayment-programs/:id",
+      "handler": "kontakpayment-program.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

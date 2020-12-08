@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "program",
+  "info": {
+    "name": "program"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "judulProgram": {
+      "type": "string"
+    },
+    "gambarProgram": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "deskripsiProgram": {
+      "type": "richtext"
+    },
+    "totaldanaProgram": {
+      "type": "biginteger"
+    },
+    "totalterkumpulProgram": {
+      "type": "biginteger"
+    },
+    "durasiProgram": {
+      "type": "integer"
+    },
+    "penulis": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "programs"
+    },
+    "kategori": {
+      "model": "kategori",
+      "via": "programs"
+    },
+    "update_programs": {
+      "via": "program",
+      "collection": "update-program"
+    },
+    "cerita_program": {
+      "via": "program",
+      "model": "cerita-program"
+    }
+  }
+}

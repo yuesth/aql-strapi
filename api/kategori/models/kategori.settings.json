@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kategori",
+  "info": {
+    "name": "kategori"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "namaKategori": {
+      "type": "string"
+    },
+    "programs": {
+      "via": "kategori",
+      "collection": "program"
+    },
+    "idKategori": {
+      "type": "integer"
+    }
+  }
+}

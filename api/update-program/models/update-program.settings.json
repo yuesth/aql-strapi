@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "update-program",
+  "info": {
+    "name": "update-program"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "namaUpdate": {
+      "type": "string"
+    },
+    "deskripsiUpdate": {
+      "type": "string"
+    },
+    "gambarUpdate": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "tanggalpelaksanaanUpdate": {
+      "type": "date"
+    },
+    "program": {
+      "model": "program",
+      "via": "update_programs"
+    }
+  }
+}

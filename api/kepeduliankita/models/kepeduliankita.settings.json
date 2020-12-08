@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kepeduliankita",
+  "info": {
+    "name": "kepeduliankita"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "judulKepedulianKita": {
+      "type": "string"
+    },
+    "gambarKepedulianKita": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "kontenKepedulianKita": {
+      "type": "richtext"
+    }
+  }
+}

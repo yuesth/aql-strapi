@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kepeduliankitas",
+      "handler": "kepeduliankita.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kepeduliankitas/count",
+      "handler": "kepeduliankita.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kepeduliankitas/:id",
+      "handler": "kepeduliankita.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kepeduliankitas",
+      "handler": "kepeduliankita.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kepeduliankitas/:id",
+      "handler": "kepeduliankita.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kepeduliankitas/:id",
+      "handler": "kepeduliankita.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
