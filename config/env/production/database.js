@@ -1,5 +1,5 @@
-const parse = require('pg-connection-string').parse;
-const config = require(process.env.HEROKU_POSTGRESQL_MAROON_URL);
+//const parse = require('pg-connection-string').parse;
+//const config = require(process.env.HEROKU_POSTGRESQL_MAROON_URL);
 
 
 module.exports = ({ env }) => ({
@@ -9,14 +9,14 @@ module.exports = ({ env }) => ({
       connector: 'bookshelf',
       settings: {
         client: 'postgres',
-        host: config.host,
-        port: config.port,
-        database: config.database,
-        username: config.user,
-        password: config.password,
+        host: "ec2-35-169-184-61.compute-1.amazonaws.com",
+        port: 5432,
+        database: "d3d9tcukrk5fgh",
+        username: "mwtwuvkwtrqpir",
+        password: "42f03376af67a349fe2b1308f341cd71ce8bc037466bf062bc365ad4dbe28047",
       },
       options: {
-	ssl:false,
+		ssl:false,
       },
     },
   },
