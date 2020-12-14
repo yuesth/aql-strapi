@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/khazanahs",
+      "handler": "khazanah.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/khazanahs/count",
+      "handler": "khazanah.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/khazanahs/:id",
+      "handler": "khazanah.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/khazanahs",
+      "handler": "khazanah.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/khazanahs/:id",
+      "handler": "khazanah.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/khazanahs/:id",
+      "handler": "khazanah.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

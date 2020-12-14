@@ -35,22 +35,19 @@
     "durasiProgram": {
       "type": "integer"
     },
-    "penulis": {
-      "plugin": "users-permissions",
-      "model": "user",
-      "via": "programs"
-    },
     "kategori": {
       "model": "kategori",
       "via": "programs"
     },
     "update_programs": {
-      "via": "program",
-      "collection": "update-program"
+      "collection": "update-program",
+      "via": "program"
     },
-    "cerita_program": {
-      "via": "program",
-      "model": "cerita-program"
+    "cerita": {
+      "type": "richtext"
+    },
+    "linkBerkahBerjamaah": {
+      "type": "string"
     }
   }
 }

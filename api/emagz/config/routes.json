@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/emagzs",
+      "handler": "emagz.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/emagzs/count",
+      "handler": "emagz.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/emagzs/:id",
+      "handler": "emagz.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/emagzs",
+      "handler": "emagz.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/emagzs/:id",
+      "handler": "emagz.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/emagzs/:id",
+      "handler": "emagz.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,21 +1,15 @@
 {
   "kind": "collectionType",
-  "collectionName": "update-program",
+  "collectionName": "emagz",
   "info": {
-    "name": "update-program"
+    "name": "emagz"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "namaUpdate": {
-      "type": "string"
-    },
-    "deskripsiUpdate": {
-      "type": "string"
-    },
-    "gambarUpdate": {
+    "posterEmagz": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -26,12 +20,11 @@
       "plugin": "upload",
       "required": false
     },
-    "tanggalpelaksanaanUpdate": {
-      "type": "date"
+    "linkEmagz": {
+      "type": "string"
     },
-    "program": {
-      "via": "update_programs",
-      "model": "program"
+    "judulEmagz": {
+      "type": "string"
     }
   }
 }

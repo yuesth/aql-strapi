@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/nomor-rekening-kategoris",
+      "handler": "nomor-rekening-kategori.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/nomor-rekening-kategoris/count",
+      "handler": "nomor-rekening-kategori.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/nomor-rekening-kategoris/:id",
+      "handler": "nomor-rekening-kategori.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/nomor-rekening-kategoris",
+      "handler": "nomor-rekening-kategori.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/nomor-rekening-kategoris/:id",
+      "handler": "nomor-rekening-kategori.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/nomor-rekening-kategoris/:id",
+      "handler": "nomor-rekening-kategori.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

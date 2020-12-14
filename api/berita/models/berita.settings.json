@@ -1,21 +1,24 @@
 {
   "kind": "collectionType",
-  "collectionName": "update-program",
+  "collectionName": "berita",
   "info": {
-    "name": "update-program"
+    "name": "berita"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "namaUpdate": {
+    "penulisBerita": {
       "type": "string"
     },
-    "deskripsiUpdate": {
+    "tanggalBerita": {
+      "type": "date"
+    },
+    "judulBerita": {
       "type": "string"
     },
-    "gambarUpdate": {
+    "gambarBerita": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -26,12 +29,15 @@
       "plugin": "upload",
       "required": false
     },
-    "tanggalpelaksanaanUpdate": {
-      "type": "date"
+    "isiBerita": {
+      "type": "richtext"
     },
-    "program": {
-      "via": "update_programs",
-      "model": "program"
+    "tagBerita": {
+      "type": "string"
+    },
+    "kategoriberita": {
+      "model": "kategoriberita",
+      "via": "beritas"
     }
   }
 }

@@ -25,6 +25,9 @@
     },
     "kontenKepedulianKita": {
       "type": "richtext"
+    },
+    "tanggalKepedulianKita": {
+      "type": "date"
     }
   }
 }

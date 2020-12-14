@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kategoriberitas",
+      "handler": "kategoriberita.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kategoriberitas/count",
+      "handler": "kategoriberita.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kategoriberitas/:id",
+      "handler": "kategoriberita.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kategoriberitas",
+      "handler": "kategoriberita.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kategoriberitas/:id",
+      "handler": "kategoriberita.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kategoriberitas/:id",
+      "handler": "kategoriberita.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

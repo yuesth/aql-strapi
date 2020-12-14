@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kategoriberita",
+  "info": {
+    "name": "kategoriberita"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "namaKategori": {
+      "type": "string"
+    },
+    "beritas": {
+      "via": "kategoriberita",
+      "collection": "berita"
+    }
+  }
+}

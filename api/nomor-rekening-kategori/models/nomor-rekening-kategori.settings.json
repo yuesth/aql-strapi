@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nomorRekeningKategori",
+  "info": {
+    "name": "nomorRekeningKategori"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "jenisBank": {
+      "type": "enumeration",
+      "enum": [
+        "Mandiri",
+        "BSM",
+        "BNI",
+        "BNISyariah",
+        "BRI",
+        "BRISyariah"
+      ]
+    },
+    "nomorRekening": {
+      "type": "string"
+    },
+    "kategori": {
+      "model": "kategori",
+      "via": "nomor_rekening_kategoris"
+    }
+  }
+}

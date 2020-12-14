@@ -1,21 +1,15 @@
 {
   "kind": "collectionType",
-  "collectionName": "update-program",
+  "collectionName": "banner-program",
   "info": {
-    "name": "update-program"
+    "name": "banner-program"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "namaUpdate": {
-      "type": "string"
-    },
-    "deskripsiUpdate": {
-      "type": "string"
-    },
-    "gambarUpdate": {
+    "banner": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -26,12 +20,8 @@
       "plugin": "upload",
       "required": false
     },
-    "tanggalpelaksanaanUpdate": {
-      "type": "date"
-    },
-    "program": {
-      "via": "update_programs",
-      "model": "program"
+    "linkBanner": {
+      "type": "string"
     }
   }
 }

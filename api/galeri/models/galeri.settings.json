@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "galeri",
+  "info": {
+    "name": "galeri"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "judulGaleri": {
+      "type": "string"
+    },
+    "kontenGaleri": {
+      "type": "richtext"
+    },
+    "gambarGaleri": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "linkGaleri": {
+      "type": "string"
+    },
+    "thumbnailGaleri": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

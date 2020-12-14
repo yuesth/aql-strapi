@@ -1,21 +1,27 @@
 {
   "kind": "collectionType",
-  "collectionName": "update-program",
+  "collectionName": "khazanah",
   "info": {
-    "name": "update-program"
+    "name": "khazanah"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "namaUpdate": {
+    "judulKhazanah": {
       "type": "string"
     },
-    "deskripsiUpdate": {
+    "pemateriKhazanah": {
       "type": "string"
     },
-    "gambarUpdate": {
+    "isiKhazanah": {
+      "type": "richtext"
+    },
+    "tanggalKhazanah": {
+      "type": "date"
+    },
+    "gambarKhazanah": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -26,12 +32,8 @@
       "plugin": "upload",
       "required": false
     },
-    "tanggalpelaksanaanUpdate": {
-      "type": "date"
-    },
-    "program": {
-      "via": "update_programs",
-      "model": "program"
+    "urlvideoKhazanah": {
+      "type": "string"
     }
   }
 }

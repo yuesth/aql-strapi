@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/galeris",
+      "handler": "galeri.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/galeris/count",
+      "handler": "galeri.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/galeris/:id",
+      "handler": "galeri.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/galeris",
+      "handler": "galeri.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/galeris/:id",
+      "handler": "galeri.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/galeris/:id",
+      "handler": "galeri.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

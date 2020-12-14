@@ -18,6 +18,10 @@
     },
     "idKategori": {
       "type": "integer"
+    },
+    "nomor_rekening_kategoris": {
+      "via": "kategori",
+      "collection": "nomor-rekening-kategori"
     }
   }
 }
