@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "banner-program",
   "info": {
-    "name": "banner-program"
+    "name": "banner-program",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "banner": {

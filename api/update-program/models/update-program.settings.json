@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "update-program",
   "info": {
-    "name": "update-program"
+    "name": "update-program",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "namaUpdate": {

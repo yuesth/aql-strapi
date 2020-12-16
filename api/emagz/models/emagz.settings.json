@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "emagz",
   "info": {
-    "name": "emagz"
+    "name": "emagz",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "posterEmagz": {

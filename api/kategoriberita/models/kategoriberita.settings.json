@@ -2,19 +2,21 @@
   "kind": "collectionType",
   "collectionName": "kategoriberita",
   "info": {
-    "name": "kategoriberita"
+    "name": "kategoriberita",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "namaKategori": {
       "type": "string"
     },
     "beritas": {
-      "via": "kategoriberita",
-      "collection": "berita"
+      "collection": "berita",
+      "via": "kategoriberita"
     }
   }
 }

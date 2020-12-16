@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "kepeduliankita",
   "info": {
-    "name": "kepeduliankita"
+    "name": "kepeduliankita",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "judulKepedulianKita": {

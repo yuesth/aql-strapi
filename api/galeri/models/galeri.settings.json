@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "galeri",
   "info": {
-    "name": "galeri"
+    "name": "galeri",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "judulGaleri": {

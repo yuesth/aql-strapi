@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "nomorRekeningKategori",
   "info": {
-    "name": "nomorRekeningKategori"
+    "name": "nomorRekeningKategori",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "jenisBank": {
@@ -24,8 +26,8 @@
       "type": "string"
     },
     "kategori": {
-      "model": "kategori",
-      "via": "nomor_rekening_kategoris"
+      "via": "nomor_rekening_kategoris",
+      "model": "kategori"
     }
   }
 }

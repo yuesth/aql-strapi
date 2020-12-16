@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "kategori",
   "info": {
-    "name": "kategori"
+    "name": "kategori",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "namaKategori": {
@@ -20,8 +22,8 @@
       "type": "integer"
     },
     "nomor_rekening_kategoris": {
-      "via": "kategori",
-      "collection": "nomor-rekening-kategori"
+      "collection": "nomor-rekening-kategori",
+      "via": "kategori"
     }
   }
 }

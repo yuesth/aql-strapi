@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "berita",
   "info": {
-    "name": "berita"
+    "name": "berita",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "penulisBerita": {
@@ -36,8 +38,8 @@
       "type": "string"
     },
     "kategoriberita": {
-      "model": "kategoriberita",
-      "via": "beritas"
+      "via": "beritas",
+      "model": "kategoriberita"
     }
   }
 }

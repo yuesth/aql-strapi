@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "program",
   "info": {
-    "name": "program"
+    "name": "program",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "judulProgram": {

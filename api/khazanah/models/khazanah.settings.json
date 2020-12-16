@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "khazanah",
   "info": {
-    "name": "khazanah"
+    "name": "khazanah",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "judulKhazanah": {
