@@ -38,8 +38,8 @@
       "type": "integer"
     },
     "kategori": {
-      "model": "kategori",
-      "via": "programs"
+      "via": "programs",
+      "model": "kategori"
     },
     "update_programs": {
       "collection": "update-program",

@@ -15,8 +15,8 @@
       "type": "string"
     },
     "programs": {
-      "via": "kategori",
-      "collection": "program"
+      "collection": "program",
+      "via": "kategori"
     },
     "idKategori": {
       "type": "integer"
@@ -24,6 +24,17 @@
     "nomor_rekening_kategoris": {
       "collection": "nomor-rekening-kategori",
       "via": "kategori"
+    },
+    "qrcodeKategori": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
