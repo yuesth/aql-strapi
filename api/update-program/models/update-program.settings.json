@@ -14,9 +14,6 @@
     "namaUpdate": {
       "type": "string"
     },
-    "deskripsiUpdate": {
-      "type": "string"
-    },
     "gambarUpdate": {
       "model": "file",
       "via": "related",
@@ -32,8 +29,11 @@
       "type": "date"
     },
     "program": {
-      "via": "update_programs",
-      "model": "program"
+      "model": "program",
+      "via": "update_programs"
+    },
+    "deskripsiUpdate": {
+      "type": "richtext"
     }
   }
 }
