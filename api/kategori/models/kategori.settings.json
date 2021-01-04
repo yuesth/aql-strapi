@@ -15,8 +15,8 @@
       "type": "string"
     },
     "programs": {
-      "collection": "program",
-      "via": "kategori"
+      "via": "kategori",
+      "collection": "program"
     },
     "idKategori": {
       "type": "integer"

@@ -29,8 +29,8 @@
       "type": "date"
     },
     "program": {
-      "model": "program",
-      "via": "update_programs"
+      "via": "update_programs",
+      "model": "program"
     },
     "deskripsiUpdate": {
       "type": "richtext"

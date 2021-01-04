@@ -38,18 +38,22 @@
       "type": "integer"
     },
     "kategori": {
-      "via": "programs",
-      "model": "kategori"
+      "model": "kategori",
+      "via": "programs"
     },
     "update_programs": {
-      "via": "program",
-      "collection": "update-program"
+      "collection": "update-program",
+      "via": "program"
     },
     "cerita": {
       "type": "richtext"
     },
     "linkBerkahBerjamaah": {
       "type": "string"
+    },
+    "linkShareProgram": {
+      "type": "string",
+      "maxLength": 35
     }
   }
 }
