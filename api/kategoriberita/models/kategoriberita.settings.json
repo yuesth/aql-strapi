@@ -15,8 +15,8 @@
       "type": "string"
     },
     "beritas": {
-      "collection": "berita",
-      "via": "kategoriberita"
+      "via": "kategoriberita",
+      "collection": "berita"
     }
   }
 }

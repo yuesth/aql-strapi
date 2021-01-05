@@ -30,6 +30,9 @@
     },
     "tanggalKepedulianKita": {
       "type": "date"
+    },
+    "captionGambarKepedulianKita": {
+      "type": "string"
     }
   }
 }

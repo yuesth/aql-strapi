@@ -36,6 +36,14 @@
     },
     "urlvideoKhazanah": {
       "type": "string"
+    },
+    "linkShareKhazanah": {
+      "type": "string",
+      "required": true,
+      "maxLength": 35
+    },
+    "captionGambarKhazanah": {
+      "type": "string"
     }
   }
 }

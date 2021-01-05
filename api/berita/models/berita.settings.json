@@ -38,8 +38,16 @@
       "type": "string"
     },
     "kategoriberita": {
-      "via": "beritas",
-      "model": "kategoriberita"
+      "model": "kategoriberita",
+      "via": "beritas"
+    },
+    "linkShareBerita": {
+      "type": "string",
+      "maxLength": 35,
+      "required": true
+    },
+    "captionGambarBerita": {
+      "type": "string"
     }
   }
 }

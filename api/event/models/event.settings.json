@@ -33,6 +33,14 @@
     },
     "isiEvent": {
       "type": "richtext"
+    },
+    "captionGambarEvent": {
+      "type": "string"
+    },
+    "linkShareEvent": {
+      "type": "string",
+      "required": true,
+      "maxLength": 35
     }
   }
 }
