@@ -44,6 +44,9 @@
     },
     "captionGambarKhazanah": {
       "type": "string"
+    },
+    "penulisKhazanah": {
+      "type": "string"
     }
   }
 }
