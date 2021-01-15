@@ -40,7 +40,7 @@
     "linkShareKhazanah": {
       "type": "string",
       "required": true,
-      "maxLength": 35
+      "maxLength": 50
     },
     "captionGambarKhazanah": {
       "type": "string"

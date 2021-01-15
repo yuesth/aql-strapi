@@ -43,7 +43,7 @@
     },
     "linkShareBerita": {
       "type": "string",
-      "maxLength": 35,
+      "maxLength": 50,
       "required": true
     },
     "captionGambarBerita": {
