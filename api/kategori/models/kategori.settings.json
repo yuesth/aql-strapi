@@ -22,8 +22,8 @@
       "type": "integer"
     },
     "nomor_rekening_kategoris": {
-      "collection": "nomor-rekening-kategori",
-      "via": "kategori"
+      "via": "kategori",
+      "collection": "nomor-rekening-kategori"
     },
     "qrcodeKategori": {
       "model": "file",

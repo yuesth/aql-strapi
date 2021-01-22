@@ -26,8 +26,11 @@
       "type": "string"
     },
     "kategori": {
-      "via": "nomor_rekening_kategoris",
-      "model": "kategori"
+      "model": "kategori",
+      "via": "nomor_rekening_kategoris"
+    },
+    "atasNama": {
+      "type": "string"
     }
   }
 }
