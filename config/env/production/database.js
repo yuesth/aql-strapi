@@ -16,7 +16,7 @@ module.exports = ({ env }) => ({
         password: "42f03376af67a349fe2b1308f341cd71ce8bc037466bf062bc365ad4dbe28047",
       },
       options: {
-		ssl:false,
+		ssl:true,
       },
     },
   },
