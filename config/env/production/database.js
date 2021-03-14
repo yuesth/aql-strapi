@@ -1,5 +1,5 @@
 const parse = require('pg-connection-string').parse;
-const config = parse(process.env.HEROKU_POSTGRESQL_MAROON_URL);
+const config = require(process.env.HEROKU_POSTGRESQL_MAROON_URL);
 
 
 module.exports = ({ env }) => ({
